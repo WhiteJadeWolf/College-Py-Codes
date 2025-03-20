@@ -6,19 +6,30 @@
 }
 
 body {
-    background-color: #f8f8f8;
+    background-color: #000; 
+    color: white;
 }
 
 .hero {
     position: relative;
     height: 60vh;
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('background.jpeg') no-repeat center center/cover;
     text-align: center;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
 }
 
 nav {
@@ -28,7 +39,7 @@ nav {
 }
 
 .btn {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2); 
     border: none;
     padding: 10px 15px;
     color: white;
@@ -37,25 +48,35 @@ nav {
     border-radius: 5px;
 }
 
-.hero-content {
-    text-align: center;
+.brand-container {
+    background: rgba(0, 0, 0, 0.5); 
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 15px;
+    position: relative; 
+    z-index: 2;
 }
 
 .brand {
     font-size: 4rem;
     font-weight: bold;
+    color: white;
 }
 
 .search-box {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 2; 
 }
 
 .search-box input {
     padding: 10px;
     width: 300px;
     border: none;
+    background-color: rgba(255, 255, 255, 0.768); 
+    color: white;
     border-radius: 5px 0 0 5px;
 }
 
@@ -68,25 +89,38 @@ nav {
     cursor: pointer;
 }
 
+.content {
+    background-color: black; 
+    padding: 20px;
+    min-height: 100vh; 
+}
+
 .categories {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    gap: 30px; 
+    margin: 30px auto; 
+    background: rgba(30, 30, 30, 0.9); 
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 75%;
+    flex-wrap: wrap; 
 }
 
 .category {
     text-align: center;
-    margin: 10px;
+    margin: 25px;
 }
 
 .category img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
     object-fit: cover;
 }
 
 .category p {
-    margin-top: 5px;
-    font-size: 1rem;
+    margin-top: 10px;
+    font-size: 1.15rem;
+    color: white;
 }

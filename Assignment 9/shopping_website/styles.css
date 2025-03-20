@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Boldonse';
+    src: url('Boldonse.ttf') format('truetype'); 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #232f3e;
+    color: white;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.amazon-logo {
+    font-family: 'Boldonse', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart {
+    font-size: 18px;
+}
+
+.banner {
+    text-align: center;
+    background: url('shopping_cart.jpg') no-repeat center center/cover;
+    padding: 180px 20px;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 36px;
+}
+
+.shop-now {
+    background: #ff9900;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+    margin: 10px auto; 
+    background: #fcfcfc; 
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 70%;
+    flex-wrap: wrap; 
+}
+
+.category {
+    text-align: center;
+    margin: 25px;
+}
+
+.category img {
+    width: 210px;
+    height: 210px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.category p {
+    margin-top: 250px;
+    font-size: 1.15rem;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background: #232f3e;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
