@@ -1,6 +1,8 @@
-@font-face {
-    font-family: 'Boldonse';
-    src: url('Boldonse.ttf') format('truetype'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -19,12 +21,8 @@ header {
     padding: 15px 20px;
 }
 
-.logo {
+.Amagone-logo {
     font-size: 24px;
-    font-weight: bold;
-}
-
-.amazon-logo {
     font-family: 'Boldonse', sans-serif;
 }
 
@@ -56,16 +54,20 @@ nav ul li a {
 }
 
 .banner h1 {
-    font-size: 36px;
+    font-size: 60px;
+}
+
+.banner p {
+    font-size: 20px;
 }
 
 .shop-now {
-    background: #ff9900;
+    background: #e68a00;
     color: rgb(255, 255, 255);
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .categories {

@@ -58,13 +58,15 @@ nav {
 }
 
 .brand {
-    font-size: 4rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:italic;
+    font-size: 10rem;
     font-weight: bold;
     color: white;
 }
 
 .search-box {
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     position: relative;
