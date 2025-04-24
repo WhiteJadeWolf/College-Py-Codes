@@ -4,7 +4,9 @@ s = pd.Series(['X', 'Y', 'T', 'Aaba', 'Baca', 'CABA', None, 'bird', 'horse', 'do
 
 import pandas as pd
 
-s = pd.Series(['X', 'Y', 'T', 'Aaba', 'Baca', 'CABA', None, 'bird', 'horse', 'dog'])
+l = eval(input("Enter a list of strings : "))
+s = pd.Series(l)
+# s = pd.Series(['X', 'Y', 'T', 'Aaba', 'Baca', 'CABA', None, 'bird', 'horse', 'dog'])
 
 us = s.str.upper()
 ls = s.str.lower()

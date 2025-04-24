@@ -8,11 +8,15 @@ The result should be a list of integer indices corresponding to the good deals i
 
 import pandas as pd
 
-asking_prices = pd.Series([25000, 18000, 22000, 19500, 17500])
-fair_prices   = pd.Series([27000, 18500, 21000, 20000, 18000])
+al = eval(input("Enter a list of Ask Prices : "))
+fl = eval(input("Enter corresponding list of Fair Prices : "))
+# asking_prices = pd.Series([25000, 18000, 22000, 19500, 17500])
+# fair_prices   = pd.Series([27000, 18500, 21000, 20000, 18000])
 
-
-gd = asking_prices < fair_prices
-print(gd)
-gd_ind = list(gd[gd].index)
-print("Indices of good deals :", gd_ind)
+if(len(al)==len(fl)):
+    asking_prices = pd.Series(al)
+    fair_prices = pd.Series(fl)
+    gd = asking_prices < fair_prices
+    print(gd)
+    gd_ind = list(gd[gd].index)
+    print("Indices of good deals :", gd_ind)
